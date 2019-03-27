@@ -3,7 +3,7 @@ def my_select(collection)
  
  while i < collection.length 
    collection.collect do |x|
-     if x == yield(i)
+     x if x == yield(i)
    end
    i += 1 
  end
